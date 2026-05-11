@@ -3,6 +3,7 @@
     --orange: #FF9A16;
     --violet: #E7174A;
     --cyan: #2CC1AA;
+    --blanc: #fff;
     
 }
 
@@ -20,7 +21,8 @@ header{
     padding-bottom: 50px;
 
     a{
-    margin-left: 100px;
+        margin-left: 100px;
+        text-decoration: none;
         
     img{
         width: 180px;
@@ -72,7 +74,7 @@ footer{
 
 main{
     background-color: var(--black);
-    color: white;
+    color: var(--blanc);
 
     .section1{
         div{
@@ -88,7 +90,7 @@ main{
 
                     button{
                         border: 2px solid var(--orange);
-                        color: white;
+                        color: var(--blanc);
                         background-color: var(--orange);
                         padding: 10px;
                     }
@@ -117,7 +119,7 @@ main{
             grid-template-columns: 3fr 1fr;
             max-width: 1140px;
             margin: auto;
-            padding-bottom: 50px;
+            padding-bottom: 80px;
 
             img{
                 position: relative;
@@ -149,13 +151,48 @@ main{
                 top: 150px;
                 background-color: var(--orange);
                 padding: 40px;
-                right: 110px;
+                left: 110px;
             }
 
             img{
                 position: relative;
                 width: 100%;
                 margin: auto;
+            }
+        }
+    }
+
+    .section3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            padding-bottom: 20px;
+        }
+
+        .skills{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            max-width: 1140px;
+            margin: auto;
+            padding-bottom: 50px;
+            gap: 70px;
+
+            details{
+                summary{
+                    background-color: var(--blanc);
+                    color: var(--orange);
+                    list-style: none;  
+                }
+
+                ul{
+                    background-color: var(--blanc);
+                        
+                    li{
+                            color: var(--black);
+                    }
+                } 
             }
         }
     }
