@@ -11,6 +11,7 @@
 
 *{
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
     margin: 0;
 }
  
@@ -36,6 +37,7 @@ header{
 
     nav{
         margin-right: 200px;
+        cursor: pointer;
 
         ul{
             list-style: none;
@@ -76,123 +78,134 @@ main{
     background-color: var(--black);
     color: var(--blanc);
 
-    .section1{
-        div{
-            display: flex;
-            gap: 100px;
-            margin-left: 100px;
-            /* width: 1440px;
-            height: 664px; */
+    .contenaire{
+        max-width: 1470px;
 
+        .section1{
             div{
-                .article1{
-                    width: 576px;
+                display: flex;
+                gap: 100px;
+                margin-left: 100px;
+                /* width: 1440px;
+                height: 664px; */
 
-                    button{
-                        border: 2px solid var(--orange);
-                        color: var(--blanc);
-                        background-color: var(--orange);
-                        padding: 10px;
+                div{
+                    .article1{
+                        width: 576px;
+
+                        button{
+                            border: 2px solid var(--orange);
+                            color: var(--blanc);
+                            background-color: var(--orange);
+                            padding: 10px;
+                        }
                     }
+                }
+
+                .img{
+                    max-width: 500px;
+                }
+            }
+        }
+
+        .section2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2{
+                text-align: center;
+                padding-top: 70px;
+                padding-bottom: 30px;
+            } 
+
+            .dev-carte{
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                max-width: 1140px;
+                margin: auto;
+                padding-bottom: 80px;
+
+                img{
+                    position: relative;
+                    width: 100%;
+                    margin: auto;
+                }
+
+                .code{
+                    position: relative;
+                    max-height: 350px;
+                    top: 150px;
+                    background-color: var(--orange);
+                    padding: 40px;
+                    left: -110px;
                 }
             }
 
-            .img{
-                max-width: 500px;
-            }
-        }
-    }
-
-    .section2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h2{
-            text-align: center;
-            padding-top: 70px;
-            padding-bottom: 30px;
-        } 
-
-        .dev-carte{
-            display: grid;
-            grid-template-columns: 3fr 1fr;
-            max-width: 1140px;
-            margin: auto;
-            padding-bottom: 80px;
-
-            img{
-                position: relative;
-                width: 100%;
+            .dev-wwb{
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                max-width: 1140px;
                 margin: auto;
-            }
-
-            .code{
-                position: relative;
-                max-height: 350px;
-                top: 150px;
-                background-color: var(--orange);
-                padding: 40px;
-                left: -110px;
-            }
-        }
-
-        .dev-wwb{
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-            max-width: 1140px;
-            margin: auto;
-            padding-bottom: 50px;
+                padding-bottom: 50px;
 
 
-            .dwwm{
-                position: relative;
-                max-height: 350px;
-                top: 150px;
-                background-color: var(--orange);
-                padding: 40px;
-                left: 110px;
-            }
-
-            img{
-                position: relative;
-                width: 100%;
-                margin: auto;
-            }
-        }
-    }
-
-    .section3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h2{
-            padding-bottom: 20px;
-        }
-
-        .skills{
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-            max-width: 1140px;
-            margin: auto;
-            padding-bottom: 50px;
-            gap: 70px;
-
-            details{
-                summary{
-                    background-color: var(--blanc);
-                    color: var(--orange);
-                    list-style: none;  
+                .dwwm{
+                    position: relative;
+                    max-height: 350px;
+                    top: 150px;
+                    background-color: var(--orange);
+                    padding: 40px;
+                    left: 110px;
                 }
 
-                ul{
-                    background-color: var(--blanc);
-                        
-                    li{
-                            color: var(--black);
+                img{
+                    position: relative;
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+
+        .section3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2{
+                padding-bottom: 20px;
+            }
+
+            .skills{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                max-width: 1440px;
+                margin: auto;
+                padding-bottom: 50px;
+                gap: 70px;
+
+                article{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    
+                    details{
+                        summary{
+                            cursor: pointer;
+                            background-color: var(--blanc);
+                            color: var(--orange);
+                            list-style: none;  
+                        }
+
+                        ul{
+                            background-color: var(--blanc);
+                                
+                            li{
+                                color: var(--black);
+                            }
+                        } 
                     }
-                } 
+                }
             }
         }
     }
