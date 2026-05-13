@@ -102,6 +102,14 @@ header{
                 /* opacity: 1; */
             }
 
+            .close-modal{
+                color: var(--orange);
+                font-size: 30px;
+                position: absolute;
+                right: 3px;
+                top: 1px;
+            }
+
             .formulaire{
                 display: flex;
                 flex-direction: column;
@@ -125,16 +133,7 @@ header{
                     color: white;
                     padding: 10px 30px;
                 }
-
-                i.fa-solid.fa-x{
-                    color: var(--orange);
-                    position: absolute;
-                    right: 3px;
-                }
                 
-                .close-forme input:fa-solid.fa-x ~ fa-solid.fa-x{
-                    display: none;
-                }
             }
         
         }
@@ -184,7 +183,12 @@ main{
                                 color: var(--blanc);
                                 border: 2px solid var(--violet);
                                 background-color: var(--violet);
-                }
+                            }
+
+                            #main-form{
+                                text-decoration: none;
+                                color: var(--blanc);
+                            }
                         }
                     }
                 }
