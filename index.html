@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f35c9641f7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>John Doe</title>
 </head>
 <body>
     <header>
-        <a href="">
+        <a id="Logo" href="#">
             <img src="img/Logo.png" alt="">
             <p>Développeur Web et Web Mobile</p>
         </a>
@@ -20,8 +21,25 @@
                 <li>Ma formation</li>
                 <li>Mes compétences</li>
                 <li>Mes projets</li>
-                <li class="square">Contactez moi</li>
+                <li class="square"><a id="form" href="#demo">Contactez moi</a></li>
             </ul>
+
+            <div id="demo" class="modal">
+                
+                <form class="formulaire">
+                    <input type="checkbox">
+                    <i class="fa-solid fa-x"></i>
+                    
+                    <h2>Me contacter</h2>
+                    <label>Votre nom :</label>
+                    <input type="text" name="nom" id="nom" placeholder="votre nom">
+                    <label>Votre email :</label>
+                    <input type="email" name="mail" id="mail" placeholder="votre e-mail">
+                    <label>Votre message :</label>
+                    <input type="text" name="msg" id="msg" placeholder="votre message">
+                    <input type="submit" id="button" value="Envoyer le message">
+                </form>
+            </div>
         </nav>
     </header>
 
@@ -64,6 +82,8 @@
                     <article class="dwwm">
                         <h3>Formation Développeur Web et Web Mobile</h3>
                         <p><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quo deleniti amet et incidunt, minus reprehenderit perferendis dolore hic quaerat optio culpa illo magni voluptatibus dignissimos nihil iusto cumque aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim culpa ipsum, quos laudantium quasi dolor fugiat est deleniti velit dicta assumenda laborum, optio deserunt at dolore nam amet esse. Placeat!</p>
+
+                        <a href="#">En savoir plus</a>
                     </article>
 
                     <img src="img/dwwm.png" alt="Image d'un téléphone et d'une tablette sur un ordinateur portables, les trois écrans montrant la même images">
@@ -173,20 +193,41 @@
             </section>
 
             <section class="section4">
-                <h2>Mes projets</h2>
-                <a href="#">Voir tout les projets</a>
-                <article>
+                <div>
+                    <h2>Mes projets</h2>
+                    <a href="#">Voir tout les projets</a>
+                </div>
 
-                </article>
-                <article>
+                <div class="project">
+                    <article>
+                        <p>Front-End</p>
+                        <img src="img/projet1.PNG" alt="Projet Home Key">
+                        <h3>Home Key - Intégration HTML & CSS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Eligendi dolorem maiores deleniti consequuntur<br> excepturi vero eius enim? Atque sit aliquam fugiat<br> recusandae eos, magnam tempore corrupti expedita<br> sunt, officia doloremque!</p>
+                        
+                        <a id="button" href="#">Lire la suite</a>
 
-                </article>
-                <article>
-                    <p>Front-End</p>
-                    <img src="#" alt="Projet Home Key">
-                    <h3>Home Key Intégration HTML & CSS</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Eligendi dolorem maiores deleniti consequuntur<br> excepturi vero eius enim? Atque sit aliquam fugiat<br> recusandae eos, magnam tempore corrupti expedita<br> sunt, officia doloremque!</p>
-                </article>
+                    </article>
+
+                    <article>
+                        <p>Front-End</p>
+                        <img src="img/projet2.PNG" alt="Projet Vividly">
+                        <h3>Vividly - Intégration Mobile First</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Eligendi dolorem maiores deleniti consequuntur<br> excepturi vero eius enim? Atque sit aliquam fugiat<br> recusandae eos, magnam tempore corrupti expedita<br> sunt, officia doloremque!</p>
+
+                        <a id="button" href="#">Lire la suite</a>
+                    </article>
+
+                    <article>
+                        <p>Back-End</p>
+                        <img src="img/projet3.PNG" alt="Portfolio">
+                        <h3>Portfolio de Développeur Web</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Eligendi dolorem maiores deleniti consequuntur<br> excepturi vero eius enim? Atque sit aliquam fugiat<br> recusandae eos, magnam tempore corrupti expedita<br> sunt, officia doloremque!</p>
+
+                        <a id="button" href="#">Lire la suite</a>
+                    </article>
+
+                </div>
             </section>
         </div>
     </main>
