@@ -7,6 +7,11 @@
     
 }
 
+   @keyframes fadein {
+        from { opacity: 0;}
+        to { opacity: 1; }
+    }
+
 /* Générale*/
 
 *{
@@ -25,6 +30,12 @@ header{
     padding-bottom: 50px;
     max-width: 1470px;
     margin: auto;
+
+
+    .fade-in-header{
+        opacity: 0;
+        animation: fadein 3s forwards;
+    }
 
     a{
         margin-left: 100px;
@@ -162,6 +173,11 @@ main{
     .contenaire{
         max-width: 1470px;
         margin: auto;
+
+        .fade-in-main{
+            opacity: 0;
+            animation: fadein 3s forwards;
+        }
 
         .section1{
             div{

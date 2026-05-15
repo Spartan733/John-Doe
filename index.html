@@ -9,40 +9,44 @@
 </head>
 <body>
     <header>
-        <a id="Logo" href="#">
-            <img src="img/Logo.png" alt="">
-            <p>Développeur Web et Web Mobile</p>
-        </a>
+       
+            <a id="Logo" href="#">
+                <img src="img/Logo.png" alt="">
+                <p>Développeur Web et Web Mobile</p>
+            </a>
 
-        <nav>
-            <ul>
-                <li class="violet">Accueil</li>
-                <li>Qui suis-je ?</li>
-                <li>Ma formation</li>
-                <li>Mes compétences</li>
-                <li>Mes projets</li>
-                <li class="square"><a id="form" href="#demo">Contactez moi</a></li>
-            </ul>
+        <div class="fade-in-header">
+            <nav>
+                <ul>
+                    <li class="violet">Accueil</li>
+                    <li>Qui suis-je ?</li>
+                    <li>Ma formation</li>
+                    <li>Mes compétences</li>
+                    <li>Mes projets</li>
+                    <li class="square"><a id="form" href="#demo">Contactez moi</a></li>
+                </ul>
 
-            <div id="demo" class="modal">
-                <form class="formulaire">
-                    <h2>Me contacter</h2>
-                    <label>Votre nom :</label>
-                    <input type="text" name="nom" id="nom" placeholder="votre nom">
-                    <label>Votre email :</label>
-                    <input type="email" name="mail" id="mail" placeholder="votre e-mail">
-                    <label>Votre message :</label>
-                    <input type="text" name="msg" id="msg" placeholder="votre message">
-                    <input type="submit" id="button" value="Envoyer le message">
-                </form>
-                <a href="#" class="close-modal">&times</a>
-            </div>
-        </nav>
+                <div id="demo" class="modal">
+                    <form class="formulaire">
+                        <h2>Me contacter</h2>
+                        <label>Votre nom :</label>
+                        <input type="text" name="nom" id="nom" placeholder="votre nom">
+                        <label>Votre email :</label>
+                        <input type="email" name="mail" id="mail" placeholder="votre e-mail">
+                        <label>Votre message :</label>
+                        <input type="text" name="msg" id="msg" placeholder="votre message">
+                        <input type="submit" id="button" value="Envoyer le message">
+                    </form>
+                    <a href="#" class="close-modal">&times</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
         <div class="contenaire">
-            <section class="section1">
+            <div class="fade-in-main">
+                <section class="section1">
                     <div>
                         <div>
                             <article class="article1">
@@ -53,7 +57,7 @@
                                 </p>
 
                                 <button> <a id="main-form" href="#formu">Contactez-moi</a></button>
-                                
+                                    
                                 <div id="formu" class="modal1">
                                     <form class="formulaire1">
                                         <h2>Me contacter</h2>
@@ -75,7 +79,8 @@
                             <img class="img" src="img/moi.png" alt="Image de John Doe sur son ordinateur">
                         </div>
                     </div>
-            </section>
+                </section>
+            </div>
 
             <section class="section2">
                 <h2>Ma Formation</h2>
