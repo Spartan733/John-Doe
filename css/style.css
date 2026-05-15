@@ -29,13 +29,14 @@ header{
     a{
         margin-left: 100px;
         text-decoration: none;
+        padding-top: 10px;
         
         img{
             width: 180px;
         }
 
         p{
-        color: white;
+            color: white;
         }
 
     }
@@ -43,6 +44,7 @@ header{
     nav{
         margin-right: 200px;
         cursor: pointer;
+        padding-top: 20px;
 
         ul{
             list-style: none;
@@ -79,6 +81,7 @@ header{
 
                 #form{
                     margin: auto;
+                    color: var(--blanc);
                 }
 
             }
@@ -96,6 +99,7 @@ header{
             /* opacity: 0; */
             transition: all 0.2s;
             /* display: none; */
+            box-shadow: 6px 60px 30px 20px;
 
             &:target{
                 visibility: visible;
@@ -171,6 +175,11 @@ main{
                     .article1{
                         width: 576px;
 
+
+                        p{
+                            padding-bottom: 15px;
+                        }
+
                         button{
                             cursor: pointer;
                             border: 2px solid var(--orange);
@@ -190,15 +199,85 @@ main{
                                 color: var(--blanc);
                             }
                         }
-                    }
-                }
 
-                .img{
+                        .modal1{
+                            max-width: 240px;
+                            background-color: var(--blanc);
+                            position: absolute;
+                            left: 415px;
+                            top: 131px;
+                            padding: 10px;
+                            visibility: hidden;
+                            /* opacity: 0; */
+                            transition: all 0.2s;
+                            /* display: none; */
+                            color: var(--black);
+                            box-shadow: 8px 30px 10px 20px black;
+
+                            &:target{
+                            visibility: visible;
+                            /* opacity: 1; */
+                            }
+                        }
+
+                        .close-modal1{
+                            color: var(--orange);
+                            font-size: 30px;
+                            position: absolute;
+                            right: 3px;
+                            top: 1px;
+
+                            background-color: var(--orange);
+
+                            &:hover{
+                                transition: all 0.2s ease-in-out;
+                                color: var(--blanc);
+                                border: 2px solid var(--violet);
+                                background-color: var(--violet);
+                            }
+                        }
+
+                        .formulaire1{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            position: relative;
+               
+                            #nom{
+                                width: 200px;
+                                color: var(--black);
+                            }
+
+                            #mail{
+                                width: 200px;
+                                color: var(--black);
+                            }
+
+                            #msg{
+                                width: 200px;
+                                color: var(--black);
+                            }
+
+                            #button{
+                                background-color: black;
+                                color: white;
+                                padding: 10px 30px;
+                            }
+
+                            label{
+                                background-color: var(--orange);
+                                padding: 5px;
+                            }
+                
+                        }
+                    }
+
+                    .img{
                     max-width: 500px;
+                    }
                 }
             }
         }
-
         .section2{
             display: flex;
             flex-direction: column;
@@ -239,6 +318,13 @@ main{
                         position: absolute;
                         margin: 20px 35px;
                         background-color: var(--black);
+
+                        &:hover{
+                            transition: all 0.2s ease-in-out;
+                            color: var(--blanc);
+                            border: 2px solid var(--violet);
+                            background-color: var(--violet);
+                        }
                     }
                 }
             }
@@ -267,6 +353,13 @@ main{
                         position: absolute;
                         margin: 20px 10px;
                         background-color: var(--black);
+
+                        &:hover{
+                            transition: all 0.2s ease-in-out;
+                            color: var(--blanc);
+                            border: 2px solid var(--violet);
+                            background-color: var(--violet);
+                        }
                     }
                 }
 
@@ -373,5 +466,6 @@ main{
         }
     }
 }
+
 
 
