@@ -57,6 +57,10 @@ header{
         cursor: pointer;
         padding-top: 20px;
 
+        i.fa-solid.fa-bars{
+            display: none;
+        }
+
         ul{
             list-style: none;
             color: white;
@@ -109,11 +113,12 @@ header{
             visibility: hidden;
             /* opacity: 0; */
             transition: all 0.2s;
-            /* display: none; */
+            display: none;
             box-shadow: 6px 60px 30px 20px;
 
             &:target{
                 visibility: visible;
+                display: block;
                 /* opacity: 1; */
             }
 
@@ -289,7 +294,7 @@ main{
                     }
 
                     .img{
-                    max-width: 500px;
+                        max-width: 500px;
                     }
                 }
             }
@@ -321,7 +326,7 @@ main{
                 .code{
                     position: relative;
                     max-height: 350px;
-                    top: 150px;
+                    /* top: 150px; */
                     background-color: var(--orange);
                     padding: 40px;
                     left: -110px;
@@ -356,7 +361,7 @@ main{
                 .dwwm{
                     position: relative;
                     max-height: 350px;
-                    top: 150px;
+                    /* top: 150px; */
                     background-color: var(--orange);
                     padding: 40px;
                     left: 110px;
@@ -403,6 +408,7 @@ main{
                 margin: auto;
                 padding-bottom: 50px;
                 gap: 70px;
+                width: -webkit-fill-available;
 
                 article{
                     display: flex;
@@ -449,21 +455,23 @@ main{
             .project{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                margin: auto;
-                max-width: 1140px;
+                /* margin: auto; */
+                /* max-width: 1140px; */
                 gap: 20px;
                 padding-bottom: 20px;
                 
                 article{
                     border: 1px solid var(--blanc);
-                    width: 350px;
-                    height: 370px;
+                    /* width: 350px; */
+                    /* height: 370px; */
                     position: relative;
 
                     img{
-                        width: 320px;
+                        /* width: 320px; */
+                        width: 100%;
                         object-fit: cover;
                         padding: 10px;
+                        box-sizing: border-box;
                     }
 
                     h3{
@@ -472,7 +480,7 @@ main{
 
                     #button{
                         text-decoration: none;
-                        position: absolute;
+                        position: relative;
                         /* margin: 25px 0; */
                         bottom: -65px;
                     }
@@ -483,5 +491,196 @@ main{
     }
 }
 
+/* Responsive tablete (1024 -> 767px*/
+
+@media screen and (max-width:1024px){
+    header{
+
+        a{
+            margin: 10px;
+        }
+
+        nav{
+            margin-left: 30px;
+
+          ul{
+            display: none;
+            } 
+            
+            i.fa-solid.fa-bars{
+                display: inline;
+                color: var(--blanc);
+                position: absolute;
+                right: 0;
+            }
+        } 
+    }
+
+    main{
+        .contenaire{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1024px;
+
+            .section1{
+                display: grid;
+                grid-template-columns: auto;
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    margin: 0;
+
+                    div{
+                        .article1{
+                            max-width: 1024px;
+                            width: auto;
+                            margin-left: 10px;
+                        }
+
+                        .img{
+                            max-width: 40%;
+                        }
+                    }
+                }
+            }
+
+            .section2{
+                .dev-carte{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    margin-left: 10px;
+                    max-width: 1024px;
+
+                    .code{
+                        position: relative;
+                        left: -50px;
+                    }
+                }
+
+                .dev-wwb{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    margin-left: 10px;
+                    max-width: 1024px;
+
+                    .dwwm{
+                        position: relative;
+                        left: auto;
+                    }
+                }
+            }
+
+            .section3{
+                .skills{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    margin-left: 10px;
+
+                    article{
+                        width: 400px;
+
+                        details{
+                            summary{
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .section4{
+                .project{
+                    grid-template-columns: 1fr 1fr;
+                    row-gap: 115px;
+
+                    article:nth-child(3){
+                        grid-column: 1/3;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
+/* Responsive mobile (767 -> 320 px) */
+
+@media screen and (max-width:767px){
+
+header{
+    max-width: 767px;
+}
+
+main{
+        .contenaire{
+
+            .section1{
+                div{
+                    div{
+                       .img{
+                        max-width: 90%;
+                        } 
+                    }
+                       
+                }
+                
+            }
+            
+            .section2{
+                max-width: 767px;
+
+                .dev-carte{
+                    max-width: 767px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+
+                    img{
+                        width: 70%;
+                    }
+
+                    .code{
+                        left: -5px;
+                    }
+                }
+
+                .dev-wwb{
+                    max-width: 767px;
+                    display: flex;
+                    flex-direction: column-reverse;
+
+                    .dwwm{
+                        left: -5px;
+                    }
+                    
+                    img{
+                        width: 70%;
+                    }
+                }
+            }
+
+            .section3{
+                .skills{
+                    article{
+                        width: 300px;
+                    }
+                }
+            }
+
+            .section4{
+                .project{
+                    grid-template-columns: 1fr;
+
+                    article:nth-child(3){
+                        grid-column: 1;
+                    }
+                }
+            }
+        }
+    }
+}
